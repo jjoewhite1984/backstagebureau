@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Backstage Bureau — New website incoming." />
+    <title>Backstage Bureau — Coming Soon</title>
+
+    <!-- Body font per guidelines: Lato (fallbacks included) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root{
+        --bg: #DEF54B;     /* Brand lime */
+        --ink: #192344;    /* Midnight blue */
+      }
+
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+
+      body{
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Lato", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      }
+
+      .wrap{
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: clamp(20px, 4vw, 56px);
+        text-align: center;
+      }
+
+      .logo{
+        width: min(560px, 78vw);
+        height: auto;
+        display: block;
+        margin: 0 auto clamp(18px, 3vw, 28px);
+      }
+
+      h1{
+        margin: 0 0 10px 0;
+        font-size: clamp(22px, 4vw, 40px);
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        /* Title font in guidelines is “Superior Title Variable”.
+           If you have it hosted, add @font-face and set it here. */
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        font-weight: 700;
+      }
+
+      p{
+        margin: 0;
+        font-size: clamp(14px, 2vw, 18px);
+        line-height: 1.4;
+      }
+
+      .card{
+        width: min(760px, 92vw);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <div class="card">
+        <img
+          class="logo"
+          src="backstage-bureau--secondary-logo-midnight-blue-&-pastel-lavender-full-color-rgb-1000px-w-72ppi.png"
+          alt="Backstage Bureau"
+        />
+        <h1>New Website Incoming</h1>
+        <p>For Enquiries Contact Info [at] backstage.me</p>
+      </div>
+    </main>
+  </body>
+</html>
